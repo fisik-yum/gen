@@ -1,0 +1,103 @@
+Generation: 0
+Fitness Range: [12.416667, 58.916667]
+Mean Fitness: 34.727214
+Std.Dev: 6.714476
+Best Individual: cSMqj6"mfJjX
+
+Generation: 1
+Fitness Range: [8.500000, 28.666667]
+Mean Fitness: 15.174194
+Std.Dev: 3.017759
+Best Individual: cfMqj6"mf|jX
+
+Generation: 2
+Fitness Range: [5.833333, 28.583333]
+Mean Fitness: 10.737549
+Std.Dev: 3.001279
+Best Individual: cfuqj6"ql|jX
+
+Generation: 3
+Fitness Range: [4.250000, 22.833333]
+Mean Fitness: 8.272217
+Std.Dev: 3.040261
+Best Individual: gflqj6"ql|j^
+
+Generation: 4
+Fitness Range: [2.083333, 23.333333]
+Mean Fitness: 6.755493
+Std.Dev: 3.122009
+Best Individual: gfloj-"qlrje
+
+Generation: 5
+Fitness Range: [1.750000, 22.083333]
+Mean Fitness: 5.301392
+Std.Dev: 3.287717
+Best Individual: gfloj-"ulrje
+
+Generation: 6
+Fitness Range: [1.333333, 24.750000]
+Mean Fitness: 4.508219
+Std.Dev: 3.341141
+Best Individual: gfllj-"wlrje
+
+Generation: 7
+Fitness Range: [1.000000, 23.583333]
+Mean Fitness: 4.269816
+Std.Dev: 3.370417
+Best Individual: gfllo-"xlrje
+
+Generation: 8
+Fitness Range: [0.916667, 20.916667]
+Mean Fitness: 3.808105
+Std.Dev: 3.429380
+Best Individual: gfllo-"xlrjd
+
+Generation: 9
+Fitness Range: [0.750000, 23.333333]
+Mean Fitness: 3.625529
+Std.Dev: 3.379940
+Best Individual: gfllo-"xlrld
+
+Generation: 10
+Fitness Range: [0.500000, 20.416667]
+Mean Fitness: 3.593343
+Std.Dev: 3.351880
+Best Individual: gfllo-"xorld
+
+Generation: 11
+Fitness Range: [0.500000, 22.916667]
+Mean Fitness: 3.429199
+Std.Dev: 3.501578
+Best Individual: gfllo-"xorld
+
+Generation: 12
+Fitness Range: [0.416667, 19.166667]
+Mean Fitness: 3.390299
+Std.Dev: 3.392810
+Best Individual: gfllo,"xorld
+
+Generation: 13
+Fitness Range: [0.416667, 17.333333]
+Mean Fitness: 3.274455
+Std.Dev: 3.292463
+Best Individual: gfllo,"xorld
+
+Generation: 14
+Fitness Range: [0.250000, 18.833333]
+Mean Fitness: 3.230509
+Std.Dev: 3.364463
+Best Individual: gfllo, xorld
+
+Generation: 15
+Fitness Range: [0.083333, 21.666667]
+Mean Fitness: 3.036418
+Std.Dev: 3.304318
+Best Individual: gello, world
+
+Generation: 16
+Fitness Range: [0.000000, 18.083333]
+Mean Fitness: 2.980713
+Std.Dev: 3.289608
+Best Individual: hello, world
+
+Completed!
