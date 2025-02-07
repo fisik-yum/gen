@@ -3,14 +3,13 @@ package main
 import (
 	"fmt"
 	"gonum.org/v1/gonum/stat"
-	"math"
 	"math/rand"
 	"sort"
 	//"github.com/ka-weihe/fast-levenshtein"
 )
 
 // Problem setup
-const TARGET_PHRASE = "Lorem ipsum dolor sit amet,"
+const TARGET_PHRASE = "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum."
 
 // const TARGET_PHRASE="Hello, World!"
 const GENE_SIZE = int32(len(TARGET_PHRASE))
@@ -20,6 +19,8 @@ const MAX_GENERATIONS = 2500
 const POP_SIZE = 2048
 const MUTATION_CHANCE = 0.01
 const POP_HOLD = 10
+
+var FITNESS_FUNC = fitnessMeanRuneDistance
 
 // [min,max] for rune values
 const UTF8_MIN = int32(' ')
@@ -70,17 +71,8 @@ func genRand() individual {
 func calcFitness(ind individual) float64 {
 	//calculate fitness score of a member
 	// mean character diffference
-	var dists [GENE_SIZE]float64
-	var phrase_split = []rune(TARGET_PHRASE)
-	for i := 0; i < int(GENE_SIZE); i++ {
-		dists[i] = (math.Abs(float64(ind[i] - phrase_split[i])))
-	}
-	var sum float64
-	for i := 0; i < int(GENE_SIZE); i++ {
-		sum += dists[i]
-	}
-	return sum / float64(GENE_SIZE)
 	//return float64(levenshtein.Distance(ind.String(),TARGET_PHRASE))//float64(0)
+	return FITNESS_FUNC(ind)
 }
 
 // Summarize statistics for a generation. Pass in a sorted slice by fitness
