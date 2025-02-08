@@ -13,14 +13,14 @@ const TARGET_PHRASE = "Lorem Ipsum is simply dummy text of the printing and type
 
 // const TARGET_PHRASE="Hello, World!"
 const GENE_SIZE = int32(len(TARGET_PHRASE))
-const MAX_GENERATIONS = 2500
+const MAX_GENERATIONS = 3500
 
 // Population parameters
 const POP_SIZE = 2048
 const MUTATION_CHANCE = 0.01
 const POP_HOLD = 10
 
-var FITNESS_FUNC = fitnessMeanRuneDistance
+var FITNESS_FUNC = fitnessHammingDistance
 
 // [min,max] for rune values
 const UTF8_MIN = int32(' ')
