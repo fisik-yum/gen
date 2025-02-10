@@ -18,7 +18,7 @@ const MAX_GENERATIONS = 3500
 // Population parameters
 const POP_SIZE = 2048
 const MUTATION_CHANCE = 0.01
-const POP_HOLD = 10
+const POP_HOLD = 2048 / 4
 
 var FITNESS_FUNC = fitnessHammingDistance
 
@@ -112,10 +112,10 @@ func simulateGeneration(pop []individual) ([]individual, bool) {
 		newpop := make([]individual, 0)
 		newpop = append(newpop, pop[0:POP_HOLD]...)
 		for i := 0; i < POP_SIZE-POP_HOLD; i += 2 {
-			a, b := cross(newpop[0], newpop[1])
+			a, b := cross(newpop[i], newpop[i+1])
 			newpop = append(newpop, a, b)
 		}
-		for i := 0; i < POP_SIZE; i++ {
+		for i := POP_HOLD; i < POP_SIZE; i++ {
 			newpop[i] = mutate(newpop[i], MUTATION_CHANCE)
 		}
 		return newpop, false
